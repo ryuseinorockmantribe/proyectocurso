@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.albert.proyectoclaseaal.SplashScreenFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_splash_screen"
+        >
+        <action
+            android:id="@+id/actionAnimationSplashScreen"
+            app:destination="@id/viewRickyMortyFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/viewRickyMortyFragment"
+        android:name="com.albert.proyectoclaseaal.ScreenViewRickyMortyFragment"
+        android:label="RegisterFragment"
+        tools:layout="@layout/fragment_rickymorty">
+    </fragment>
+
+<!--
+    <dialog
+        android:id="@+id/detailBottomSheet"
+        android:name="royal.master.academy.grupo_a.recycler.ui.bottom_sheet.DetailBottomSheet"
+        android:label="fragment_detail_bottom_sheet"
+        tools:layout="@layout/fragment_detail_bottom_sheet" />
+-->
+</navigation>
